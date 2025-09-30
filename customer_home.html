@@ -35,9 +35,12 @@
   <script>
     // Resolve backend origin. Use existing global if set; otherwise try same origin
     // (when serving files via Express static "."), else default to localhost:3000.
-    window.SERVER_ORIGIN = window.SERVER_ORIGIN || (
-      location.origin.includes(":3000") ? location.origin : "http://localhost:3000"
-    );
+  window.SERVER_ORIGIN = window.SERVER_ORIGIN || (
+    location.origin.includes(":3000")
+      ? "http://localhost:3000"                        // เวลา dev ในเครื่อง
+      : "https://sa-ranahan-1.onrender.com"            // ของจริงบน Render
+  );
+
   </script>
 </head>
 <body>
