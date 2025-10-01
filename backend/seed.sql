@@ -122,6 +122,13 @@ INSERT INTO staff (staffId, fname, lname, email, contact, priority, image, workD
 ('S001','John','Doe','john@example.com','0811111111','Manager','https://i.scdn.co/image/ab67616100005174ecddf4e9db3637257468860e','Mon-Fri','09:00-17:00'),
 ('S002','Alice','Smith','alice@example.com','0822222222','Staff','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nQv0FHhYTpkZ5Mbl1nJCRqCNuW6O1iHEIeNorjZh0ykRz5eVhQEP7P89bpXfJiYgUwc&usqp=CAU','Tue-Sat','10:00-18:00'),
 ('S003','Bob','Taylor','bob@example.com','0833333333','Staff','https://i1.sndcdn.com/artworks-000108059561-gw8196-t500x500.jpg','Wed-Sun','12:00-20:00');
+('S004','Charlie','Brown','charlie@example.com','0844444444','Staff','https://randomuser.me/api/portraits/men/32.jpg','Mon-Fri','11:00-19:00'),
+('S005','Diana','Lee','diana@example.com','0855555555','Staff','https://randomuser.me/api/portraits/women/45.jpg','Tue-Sat','09:00-17:00'),
+('S006','Ethan','Wilson','ethan@example.com','0866666666','Manager','https://randomuser.me/api/portraits/men/67.jpg','Mon-Fri','08:00-16:00'),
+('S007','Fiona','Clark','fiona@example.com','0877777777','Staff','https://randomuser.me/api/portraits/women/68.jpg','Wed-Sun','12:00-20:00'),
+('S008','George','Hall','george@example.com','0888888888','Staff','https://randomuser.me/api/portraits/men/70.jpg','Thu-Mon','10:00-18:00'),
+('S009','Hannah','Adams','hannah@example.com','0899999999','Staff','https://randomuser.me/api/portraits/women/72.jpg','Fri-Tue','13:00-21:00'),
+('S010','Ian','Moore','ian@example.com','0801234567','Staff','https://randomuser.me/api/portraits/men/73.jpg','Mon-Fri','09:30-17:30');
 
 
 -- Tables (12 โต๊ะ)
