@@ -11,7 +11,7 @@ CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
   password TEXT NOT NULL,
-  role TEXT NOT NULL CHECK(role IN ('manager','staff','customer','moniter')),
+  role TEXT NOT NULL CHECK(role IN ('manager','staff','customer','monitor')),
   table_no TEXT
 );
 
@@ -88,29 +88,38 @@ INSERT INTO users (username, password, role, table_no) VALUES
 ('manager1','123','manager',''),
 ('staff1','123','staff',''),
 ('customer1','123','customer',''),
-('monitor1','123','moniter','01'),
-('monitor2','123','moniter','02'),
-('monitor3','123','moniter','03'),
-('monitor4','123','moniter','04'),
-('monitor5','123','moniter','05'),
-('monitor6','123','moniter','06'),
-('monitor7','123','moniter','07'),
-('monitor8','123','moniter','08'),
-('monitor9','123','moniter','09'),
-('monitor10','123','moniter','10'),
-('monitor11','123','moniter','11'),
-('monitor12','123','moniter','12');
+('monitor1','123','monitor','01'),
+('monitor2','123','monitor','02'),
+('monitor3','123','monitor','03'),
+('monitor4','123','monitor','04'),
+('monitor5','123','monitor','05'),
+('monitor6','123','monitor','06'),
+('monitor7','123','monitor','07'),
+('monitor8','123','monitor','08'),
+('monitor9','123','monitor','09'),
+('monitor10','123','monitor','10'),
+('monitor11','123','monitor','11'),
+('monitor12','123','monitor','12');
 
 -- Promotions
 INSERT INTO promotions (name, desc, image, date, status) VALUES
-('Discount 20%','Special discount for popular menus','https://via.placeholder.com/300x200','2025-01-01','Active'),
-('Free Drink','Buy 300 THB for FREE baverage','https://via.placeholder.com/300x200','2025-02-01','Inactive');
+('Discount 20%','Special discount for popular menus','https://t4.ftcdn.net/jpg/00/63/83/29/360_F_63832924_PE0b9gQltaKya7t6mIQLWat5ob0KcuXr.jpg','2025-10-01','Active'),
+('Free Drink','Buy 300 THB for FREE baverage','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZxIPN7UWyqfZb8LYwLpPRiYqM58wX3u3Gw&s','2025-10-01','Active');
 
 -- Menu (เติม desc ให้ตรง schema)
 INSERT INTO menu (englishName, desc, type, price, image) VALUES
-('Krapao','Thai basil stir-fry','Main Dish',100,'https://images.kitchenstories.io/wagtailOriginalImages/R2592-final-photo.jpg'),
-('Som Tum','Papaya salad','Beverage',70,'https://assets.bonappetit.com/photos/644819df047251c7e5ee250b/1:1/w_3665,h_3665,c_limit/042523-green-papaya-salad-lede.jpg'),
-('Pad Thai','Classic stir-fried noodles','Main Dish',90,'https://inquiringchef.com/wp-content/uploads/2023/02/Authentic-Pad-Thai_square-1908.jpg');
+('Krapao','Thai basil stir-fry','Main Dish',65,'https://images.kitchenstories.io/wagtailOriginalImages/R2592-final-photo.jpg'),
+('Som Tum','Spicy green papaya salad with chili and lime.',70,'https://assets.bonappetit.com/photos/644819df047251c7e5ee250b/1:1/w_3665,h_3665,c_limit/042523-green-papaya-salad-lede.jpg'),
+('Pad Thai','Stir-fried rice noodles with shrimp, egg, and peanuts.','Main Dish',60,'https://inquiringchef.com/wp-content/uploads/2023/02/Authentic-Pad-Thai_square-1908.jpg');
+('Green Curry','Classic stir-fried noodles','Main Dish',70,'https://hot-thai-kitchen.com/wp-content/uploads/2022/04/green-curry-new-sq-3.jpg');
+('Tom Yun Kung','Hot and sour shrimp soup with herbs.','Main Dish',100,'https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg');
+('Khao Pad','Thai-style fried rice with egg and veggies.','Main Dish',60,'https://khinskitchen.com/wp-content/uploads/2023/02/khao-pad-08.jpg');
+('Water','NOT DELICIOUS','Beverage',20,'https://st.bigc-cs.com/cdn-cgi/image/format=webp,quality=90/public/media/catalog/product/07/88/8850999320007/8850999320007_1-20250724185102-.jpg');
+('Coke','Original Cola','Beverage',30,'https://imartgrocersph.com/wp-content/uploads/2020/09/Coke-Regular-Mismo-12_s.png');
+('Sprite','Soda but SWEET','Beverage',30,'https://www.coca-cola.com/content/dam/onexp/us/en/brands/sprite/products/en_sprite_prod_lymonade_20oz-bottle_750x750_v1.jpg');
+('Soda','Best Material for Beer','Beverage',20,'https://st.bigc-cs.com/cdn-cgi/image/format=webp,quality=90/public/media/catalog/product/00/88/8850999220000/8850999220000_1-20250715111050-.jpg');
+('LEO Beer','A smooth Thai lager with a light, crisp taste.','Beverage',80,'https://newyorkpizza.online/live/wp-content/uploads/2020/06/Leo-Beer.jpg');
+('Chang Beer','A popular Thai lager, rich and refreshing.','Beverage',80,'https://newyorkpizza.online/live/wp-content/uploads/2020/06/Chang-Beer.jpg');
 
 -- Stock
 INSERT INTO stock (orderId, product, amount, salesChannel, remaining, status) VALUES
