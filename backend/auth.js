@@ -16,7 +16,7 @@
   if(page.startsWith("staff") && user.role!=="staff"){
     window.location.href="index.html";
   }
-  if(page.startsWith("moniter") && user.role!=="moniter"){
+  if(page.startsWith("moniter") && user.role!=="monitor"){
     window.location.href="index.html";
   }
   if(page.startsWith("customer") && user.role!=="customer"){
