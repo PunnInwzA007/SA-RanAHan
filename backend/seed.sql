@@ -11,7 +11,7 @@ CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
   password TEXT NOT NULL,
-  role TEXT NOT NULL CHECK(role IN ('manager','staff','customer','monitor')),
+  role TEXT NOT NULL CHECK(role IN ('manager','staff','customer','moniter')),
   table_no TEXT
 );
 
@@ -103,8 +103,8 @@ INSERT INTO users (username, password, role, table_no) VALUES
 
 -- Promotions
 INSERT INTO promotions (name, desc, image, date, status) VALUES
-('Discount 20%','Special discount for popular menus','https://t4.ftcdn.net/jpg/00/63/83/29/360_F_63832924_PE0b9gQltaKya7t6mIQLWat5ob0KcuXr.jpg','2025-10-01','Active'),
-('Free Drink','Buy 300 THB for FREE baverage','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZxIPN7UWyqfZb8LYwLpPRiYqM58wX3u3Gw&s','2025-10-01','Active');
+('Discount 20%','Special discount for popular menus','https://via.placeholder.com/300x200','2025-01-01','Active'),
+('Free Drink','Buy 300 THB for FREE baverage','https://via.placeholder.com/300x200','2025-02-01','Inactive');
 
 -- Menu (เติม desc ให้ตรง schema)
 INSERT INTO menu (englishName, desc, type, price, image) VALUES
@@ -137,7 +137,6 @@ INSERT INTO stock (orderId, product, amount, salesChannel, remaining, status) VA
 ('0012','Chili',3,'Thai-Market',100,'High'),
 ('0013','Lime',3,'Thai-Market',100,'High'),
 ('0014','Cucumber',3,'Thai-Market',100,'High');
-
 
 -- Staff (ตัวอย่างชุดแรก)
 INSERT INTO staff (staffId, fname, lname, email, contact, priority, image, workDays, shiftTime) VALUES
