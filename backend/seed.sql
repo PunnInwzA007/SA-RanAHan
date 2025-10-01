@@ -88,18 +88,18 @@ INSERT INTO users (username, password, role, table_no) VALUES
 ('manager1','123','manager',''),
 ('staff1','123','staff',''),
 ('customer1','123','customer',''),
-('monitor1','123','monitor','01'),
-('monitor2','123','monitor','02'),
-('monitor3','123','monitor','03'),
-('monitor4','123','monitor','04'),
-('monitor5','123','monitor','05'),
-('monitor6','123','monitor','06'),
-('monitor7','123','monitor','07'),
-('monitor8','123','monitor','08'),
-('monitor9','123','monitor','09'),
-('monitor10','123','monitor','10'),
-('monitor11','123','monitor','11'),
-('monitor12','123','monitor','12');
+('monitor1','123','moniter','01'),
+('monitor2','123','moniter','02'),
+('monitor3','123','moniter','03'),
+('monitor4','123','moniter','04'),
+('monitor5','123','moniter','05'),
+('monitor6','123','moniter','06'),
+('monitor7','123','moniter','07'),
+('monitor8','123','moniter','08'),
+('monitor9','123','moniter','09'),
+('monitor10','123','moniter','10'),
+('monitor11','123','moniter','11'),
+('monitor12','123','moniter','12');
 
 -- Promotions
 INSERT INTO promotions (name, desc, image, date, status) VALUES
